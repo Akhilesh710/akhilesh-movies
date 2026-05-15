@@ -1,4 +1,301 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhilesh Movies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+header{
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ffd000;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
+font-weight:500;
+}
+nav a:hover{
+color:#ffd000;
+}
+.hero{
+height:100vh;
+background:linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,.3)),url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1600&auto=format&fit=crop') center/cover;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+.hero-content{
+max-width:650px;
+}
+.hero-content h1{
+font-size:70px;
+line-height:1.1;
+margin-bottom:20px;
+color:#ffd000;
+}
+.hero-content p{
+font-size:18px;
+line-height:1.7;
+color:#ddd;
+margin-bottom:30px;
+}
+.btn{
+padding:14px 32px;
+border:none;
+border-radius:8px;
+background:#ffd000;
+color:#000;
+font-weight:700;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+.btn:hover{
+transform:translateY(-4px);
+}
+.section{
+padding:90px 8%;
+}
+.section-title{
+font-size:42px;
+margin-bottom:35px;
+color:#ffd000;
+}
+.movies-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+.card{
+background:#141414;
+border-radius:18px;
+overflow:hidden;
+transition:.4s;
+position:relative;
+}
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 10px 30px rgba(255,208,0,.15);
+}
+.card img{
+width:100%;
+height:340px;
+object-fit:cover;
+}
+.card-content{
+padding:18px;
+}
+.card-content h3{
+font-size:22px;
+margin-bottom:10px;
+}
+.card-content p{
+color:#bbb;
+font-size:14px;
+line-height:1.6;
+}
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#ffd000;
+color:#000;
+padding:6px 12px;
+font-size:12px;
+font-weight:700;
+border-radius:30px;
+}
+.banner{
+background:linear-gradient(to right,#1d1d1d,#0d0d0d);
+padding:80px 8%;
+text-align:center;
+}
+.banner h2{
+font-size:48px;
+margin-bottom:20px;
+color:#ffd000;
+}
+.banner p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#ccc;
+margin-bottom:25px;
+}
+footer{
+background:#090909;
+padding:50px 8%;
+text-align:center;
+border-top:1px solid #222;
+}
+footer h3{
+font-size:28px;
+margin-bottom:15px;
+color:#ffd000;
+}
+footer p{
+color:#aaa;
+margin-top:8px;
+}
+@media(max-width:768px){
+.hero-content h1{
+font-size:45px;
+}
+nav{
+display:none;
+}
+.section-title{
+font-size:32px;
+}
+.banner h2{
+font-size:34px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Akhilesh Movies</div>
+<nav>
+<a href="#trending">Trending</a>
+<a href="#latest">Latest</a>
+<a href="#reviews">Reviews</a>
+</nav>
+</header>
+<section class="hero">
+<video autoplay muted loop playsinline style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:-2;top:0;left:0;opacity:.35;">
+<source src="https://cdn.coverr.co/videos/coverr-film-camera-1560083562530?download=1080p" type="video/mp4">
+</video>
+<div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,.5));z-index:-1;"></div>
+<div class="hero-content">
+<h1>MOVIES OK</h1>
+<p>Watch trending movie clips, cinematic edits, upcoming releases and entertainment updates in one place with a premium modern experience.</p>
+<button class="btn">Explore Now</button>
+</div>
+</section>
+<section class="section" id="trending">
+<h2 class="section-title">🔥 Trending Now</h2>
+<div class="movies-grid">
+<div class="card">
+<span class="badge">Trending</span>
+<img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Drishyam 3</h3>
+<div style="display:flex;gap:10px;margin:12px 0;">
+<span style="color:#ffd000;">⭐ 4.8</span>
+<span style="color:#aaa;">725K Views</span>
+</div>
+<a href="https://www.youtube.com/results?search_query=drishyam+3+trailer" target="_blank">
+<button class="btn" style="padding:10px 18px;font-size:14px;">Watch Trailer</button>
+</a>
+<p>Suspense thriller with intense cinematic scenes and mystery storyline.</p>
+</div>
+</div>
+<div class="card">
+<span class="badge">Popular</span>
+<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Toxic</h3>
+<div style="display:flex;gap:10px;margin:12px 0;">
+<span style="color:#ffd000;">⭐ 4.7</span>
+<span style="color:#aaa;">500K Views</span>
+</div>
+<a href="https://www.youtube.com/results?search_query=toxic+movie+trailer" target="_blank">
+<button class="btn" style="padding:10px 18px;font-size:14px;">Watch Trailer</button>
+</a>
+<p>Power-packed action entertainer with stylish visuals and mass moments.</p>
+</div>
+</div>
+<div class="card">
+<span class="badge">New</span>
+<img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Aliens Ka Aagman</h3>
+<p>Epic sci-fi movie experience with futuristic visuals and action.</p>
+</div>
+</div>
+<div class="card">
+<span class="badge">Top Rated</span>
+<img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>KGF Universe</h3>
+<p>One of the most stylish action movie universes loved by fans.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="latest">
+<h2 class="section-title">🎬 Upcoming Releases</h2>
+<div class="movies-grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Jana Nayagan</h3>
+<p>Release Date: June 2026</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Pati Patni Aur Woh 2</h3>
+<p>Release Date: July 2026</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>War Zone</h3>
+<p>Release Date: August 2026</p>
+<br>
+<a href="https://www.youtube.com/watch?v=4GPvYMKtrtI" target="_blank">
+<button class="btn">Watch Trailer</button>
+</a>
+</div>
+</div>
+
+<div class="card">
+<span class="badge">Blockbuster</span>
+<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Pushpa 2</h3>
+<p>Allu Arjun returns with mass action and powerful dialogues.</p>
+<br>
+<a href="https://www.youtube.com/watch?v=g3JUbgOHgdw" target="_blank">
+<button class="btn">Watch Trailer</button>
+</a>
+</div>
+</div>
+
+<div class="card">
+<span class="badge">New</span>
+<img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop">
 <div class="card-content">
 <h3>Salaar 2</h3>
 <p>High-voltage action thriller starring Prabhas.</p>
@@ -47,6 +344,15 @@
 </div>
 </div>
 </section>
+<section style="padding:90px 8%;background:url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=1600&auto=format&fit=crop') center/cover fixed;position:relative;">
+<div style="position:absolute;inset:0;background:rgba(0,0,0,.75);"></div>
+<div style="position:relative;text-align:center;z-index:2;">
+<h2 style="font-size:52px;color:#ffd000;margin-bottom:20px;">Unlimited Movie Experience</h2>
+<p style="max-width:700px;margin:auto;color:#ddd;line-height:1.8;margin-bottom:25px;">Stream trailers, discover upcoming movies and enjoy cinematic visuals with a premium entertainment UI.</p>
+<button class="btn">Start Watching</button>
+</div>
+</section>
+
 <footer>
 <h3>Akhilesh Movies</h3>
 <p>📍 Gorakhpur, Uttar Pradesh, India</p>
